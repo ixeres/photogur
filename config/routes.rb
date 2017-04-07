@@ -1,18 +1,7 @@
 Rails.application.routes.draw do
   root 'pictures#index'
-  get 'pictures' => 'pictures#index'
 
-  post 'pictures' => 'pictures#create' # this is a new line of code
-  get 'pictures/new' => 'pictures#new' # this is also a new line of code
-
-  get 'pictures/:id' => 'pictures#show', as: 'picture'
-
-  get 'pictures/:id/edit' => "pictures#edit", as: "edit_picture"
-  patch 'pictures/:id' => "pictures#update" #PATCH! For updating?
-
-  delete 'pictures/:id' => 'pictures#destroy', as: "delete_picture"
-
-  root 'pictures#index' #Why the second root? CURIOUS.
+  resources :pictures #And then we undo all the earlier work with this shorthand. I SENSE A RECURRING THEME.
 end
 
 # # Explaining it for myself.
