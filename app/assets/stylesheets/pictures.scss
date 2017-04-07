@@ -11,10 +11,33 @@ h1 {
   background-color: black;
   color: white;
   text-align: center;
+  padding: 20px;
 }
 
 nav {
   background-color: grey;
   color: white;
   text-align: center;
+}
+
+ul {
+  list-style: none;
+  border: 2px white solid;
+}
+
+.images {
+    border: 5px red solid;
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+a:-webkit-any-link {
+    color: white;
+    text-decoration: none;
+    cursor: auto;
+  }
+
+a:hover {
+  background: white;
+  color: black;
 }

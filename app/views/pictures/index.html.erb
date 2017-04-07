@@ -1,9 +1,8 @@
 <h1>There are (<%= @pictures.length %>) pictures for you to look at!</h1>
-<%= link_to "New Picture", "/pictures/new" %>
 
 <% @pictures.each do |picture| %>
-  <p><%= picture.title %>, <%= picture.artist %></p>
   <%= link_to image_tag(picture.url), "/pictures/#{picture.id}" %>
+  <p><%= picture.title %>, <%= picture.artist %></p>
 <% end %>
 
 <!-- Note to self: code is entered like you normally would, but wrapped in alligator tags when used in html. -->
