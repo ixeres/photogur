@@ -2,18 +2,19 @@
 <html>
 <head>
   <title>OMG PHOTOS</title>
-  <%=stylesheet_link_tag("/public/stylesheets/styles.css")%>
+  <link rel="stylesheet" href="public/stylesheets/style.css">
   <%= stylesheet_link_tag    'application', media: 'all' %>
   <%= javascript_include_tag 'application' %>
   <%= csrf_meta_tags %>
+  <link href="https://fonts.googleapis.com/css?family=Bungee+Hairline|Revalia" rel="stylesheet">
 </head>
 <body>
   <h1>OMG PHOTOS?!</h1>
   <nav>
     <ul>
-      <li><<%= link_to "Home", "/" %></li>
-      <li><<%= link_to "Add Picture", "/pictures/new" %></li>
-      <li><<%= link_to "This Goes Nowhere", "http://www.nowhere.com" %></li>
+      <li><%= link_to "Home", "/" %></li>
+      <li><%= link_to "Add Picture", "/pictures/new" %></li>
+      <li><%= link_to "This Goes Nowhere", "http://www.nowhere.com" %></li>
     </ul>
   </nav>
 
