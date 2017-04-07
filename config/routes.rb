@@ -1,7 +1,7 @@
 Rails.application.routes.draw do
   root 'pictures#index'
 
-  resources :pictures #And then we undo all the earlier work with this shorthand. I SENSE A RECURRING THEME.
+  resources :pictures
 end
 
 # # Explaining it for myself.

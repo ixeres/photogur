@@ -1,8 +1,9 @@
-<h1> CHECK THIS SHIT OUT. </h1>
+<h1>CHECK THESE OUT. (<%= @pictures.length %>)</h1>
+<%= link_to "New Picture", "/pictures/new" %>
 
 <% @pictures.each do |picture| %>
   <p><%= picture.title %>, <%= picture.artist %></p>
-  <img src="<%= picture.url %>">
+  <%= link_to image_tag(picture.url), "/pictures/#{picture.id}" %>
 <% end %>
 
 <!-- Note to self: code is entered like you normally would, but wrapped in alligator tags when used in html. -->
