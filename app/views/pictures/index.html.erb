@@ -1,1 +1,8 @@
 <h1> CHECK THIS SHIT OUT. </h1>
+
+<% @pictures.each do |picture| %>
+  <p><%= picture.title %>, <%= picture.artist %></p>
+  <img src="<%= picture.url %>">
+<% end %>
+
+<!-- Note to self: code is entered like you normally would, but wrapped in alligator tags when used in html. -->
