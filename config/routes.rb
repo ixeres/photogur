@@ -6,6 +6,9 @@ Rails.application.routes.draw do
   get 'pictures/new' => 'pictures#new' # this is also a new line of code
 
   get 'pictures/:id' => 'pictures#show', as: 'picture'
+
+  get 'pictures/:id/edit' => "pictures#edit", as: "edit_picture"
+  patch 'pictures/:id' => "pictures#update" #PATCH! For updating?
 end
 
 # # Explaining it for myself.
