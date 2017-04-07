@@ -4,7 +4,7 @@
 <% @pictures.each do |picture| %>
   <%= link_to image_tag(picture.url), "/pictures/#{picture.id}" %>
   <p><%= picture.title %>, <%= picture.artist %></p>
-</div>
 <% end %>
+</div>
 
 <!-- Note to self: code is entered like you normally would, but wrapped in alligator tags when used in html. -->
