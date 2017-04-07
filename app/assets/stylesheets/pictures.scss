@@ -26,16 +26,19 @@ ul {
 }
 
 .images {
+  display: inline-block;
     border: 5px red solid;
     margin-left: 20%;
     margin-right: 20%;
 }
 
 a:-webkit-any-link {
+    text-transform: uppercase;
     color: red;
     text-decoration: none;
     cursor: auto;
     font-weight: bold;
+    font-size: 26px;
   }
 
 a:hover {
