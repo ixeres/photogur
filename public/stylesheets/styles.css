@@ -1,0 +1,16 @@
+html {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 1.2em;
+}
+
+h1 {
+  background-color: black;
+  color: white;
+  text-align: center;
+}
+
+nav {
+  background-color: grey;
+  color: white;
+  text-align: center;
+}

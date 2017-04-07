@@ -1,12 +1,22 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Photogur</title>
+  <title>OMG PHOTOS</title>
+  <%=stylesheet_link_tag("/public/stylesheets/styles.css")%>
   <%= stylesheet_link_tag    'application', media: 'all' %>
   <%= javascript_include_tag 'application' %>
   <%= csrf_meta_tags %>
 </head>
 <body>
+  <h1>OMG PHOTOS?!</h1>
+  <nav>
+    <ul>
+      <li><<%= link_to "Home", "/" %></li>
+      <li><<%= link_to "Add Picture", "/pictures/new" %></li>
+      <li><<%= link_to "This Goes Nowhere", "http://www.nowhere.com" %></li>
+    </ul>
+  </nav>
+
 
 <%= yield %>
 
