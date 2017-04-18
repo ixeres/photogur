@@ -6,6 +6,10 @@ html {
   font-size: 1.2em;
 }
 
+body {
+  width: 100%;
+}
+
 h1 {
   font-family: 'Revalia', cursive;
   background-color: black;
@@ -21,15 +25,20 @@ nav {
 }
 
 ul {
+  font-family: 'Teko', sans-serif;
   list-style: none;
   border: 2px white solid;
 }
 
+li {
+  margin-bottom: 5px;
+}
+
 .images {
   display: inline-block;
-    border: 5px red solid;
-    margin-left: 20%;
-    margin-right: 20%;
+  border: 5px red solid;
+  margin-left: 10%;
+  margin-right: 10%;
 }
 
 a:-webkit-any-link {
